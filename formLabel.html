@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>KİŞİSEL BİLGİ FORMU</h1>
+    <!-- kullanıcının text girebileceği adınız : adlı bir alan oluşturduk form sonucunu gonder.php ye gönderdik-->
+     <!-- Yazılan her şeyi form tagı içine yazmaya özen göster yoksa nereyi sileceğini anlamaz reset -->
+    <form action="gonder.php">
+        Name: <input type="text" placeholder="Lütfen isim giriniz" /><br /><br />
+        Password: <input type="password" placeholder="Lütfen şifrenizi giriniz""><br/><br/>
+        E-mail: <input type=" email" placeholder="Lütfen e posta hesabınızı giriniz"><br /><br />
+        <h5>Hobilerinizi Seçiniz</h5>
+        <!-- checked=true dersen o seçenek seçili halde form açılır -->
+        reading a book<input type="checkbox" checked="true"/> <br>
+        playing guitar<input type="checkbox" /> <br />
+        drawing picture<input type="checkbox" /> <br><br />
+        <h5>Lütfen Cinsiyetinizi Seçiniz</h5>
+        Kadın:<input type="radio" name="cinsiyetRadio" /> <br/>
+        Erkek:<input type="radio" name="cinsiyetRadio" /><br/>
+        <input type="file" /><br/><br/>
+        <h5>Sevdiğiniz İçecekler</h5>
+        <!-- Option*3 enter dersen 3 tane seçenek kodu oluşturur -->
+         <!-- Açılır liste yani Combobox kullanımı aşağıdadır -->
+        <select>
+            <option>Çay</option>
+            <option>Kahve</option><br/>
+            <option>Limonata</option><br/>
+        </select><br/><br/>
+        <!-- istenen özelliklerde bir textarea oluşturur  -->
+        <textarea name="mesajInput" id="mesajAlani" cols="30" rows="10"></textarea><br/><br/>
+
+        <!-- submit:gönder butonu -->
+        <input type="submit" value="GÖNDER" width="100" height="100"/>
+        <!-- Sil butonu oluşturduk fformu temizler tamamen -->
+        <input type="reset" value="SİL"/>
+
+    </form>
+
+</body>
+
+</html>
